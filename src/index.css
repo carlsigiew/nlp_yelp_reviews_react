@@ -7,7 +7,28 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.business_span{
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.autocomplete_cetering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  width: 17.5rem;
+  margin-bottom: 1rem;
+}
+.WordCloud {
+  height: 50;
+  width: 200;
+}
 .navbar {
   padding: 20px;
   display: flex;
@@ -29,12 +50,9 @@ body {
 
 
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  margin: 10px auto;
   overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
-  padding: 30px;
+  padding: 10px;
   border-radius: 5px;
 }
 

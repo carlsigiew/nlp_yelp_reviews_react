@@ -15,9 +15,8 @@ import {
 } from 'react-router-dom';
 
 function App() {
-  
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat',height:6000, width:1000}}>
+    <div >
 
       <Router>
         <Routes>

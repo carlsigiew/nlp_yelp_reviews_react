@@ -15,6 +15,7 @@
     "react": "^18.2.0",
     "react_older": "npm:react@^16.13.0",
     "react-bootstrap": "^2.5.0-beta.1",
+    "react-chart-histogram": "^0.2.4",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.3",

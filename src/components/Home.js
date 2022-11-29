@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
+import backgroundImage from '../images/people_eating.png';
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import Dashboard from "./Dashboard";
 const Home = () => {
@@ -33,15 +34,27 @@ const Home = () => {
 
   return (
 
-    <div><Navbar />
+    <div style={{ backgroundImage: `url(${backgroundImage})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    width: '100vw',
+    height: '100vh'}}><Navbar />
+    <span className='business_span'>Select the business you would like to see the statistics for:</span>
     <Autocomplete
       disablePortal
       id="restaurant_names"
       options={businesses}
+      clearOnEscape="True"
       getOptionLabel={(option) => option.name}
-      sx={{ width: 300 }}
       renderInput={(params) => <TextField {...params} label="Restaurants" />}
-
+      sx={{
+        "& .MuiInputLabel-root": {color: 'black'},//styles the label
+        "& .MuiOutlinedInput-root": {
+          "& > fieldset": { borderColor: "black" },
+        },
+      }}
+      size='medium'
       onKeyDown={(event) => {
         if (event.key === 'Enter') {
           console.log(event)

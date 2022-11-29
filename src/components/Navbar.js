@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="links">
             <Link to="/">
-                <FaHome  /> 
+                <FaHome size={25} /> 
             </Link>
             </div>
         </nav>
